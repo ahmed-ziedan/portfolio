@@ -51,7 +51,7 @@ export const gridItems = [
 
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "My experience, all in one place.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -136,6 +136,7 @@ export const companies = [
     name: "cloudinary",
     img: "/cloud.svg",
     nameImg: "/cloudName.svg",
+    
   },
   {
     id: 2,
@@ -146,7 +147,7 @@ export const companies = [
   {
     id: 3,
     name: "HOSTINGER",
-    img: "/host.svg",
+    img: "/dotnet-color.svg",
     nameImg: "/hostName.svg",
   },
   {
@@ -198,16 +199,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-
+ link: "https://github.com/ahmed-ziedan"
   },
   {
     id: 2,
     img: "/twit.svg",
-
+    link: "https://x.com/ahmedziedan_"
   },
   {
     id: 3,
     img: "/link.svg",
-
+    link: "https://www.linkedin.com/in/ahmedziedan/"
   },
 ];

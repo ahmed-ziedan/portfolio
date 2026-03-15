@@ -6,6 +6,7 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
+import { FaLocationArrow } from "react-icons/fa6";
 
 export const BentoGrid = ({
   className,
@@ -165,25 +166,15 @@ const rightLists = ["MVC", "LINQ", "SQL"];
           )}
           {id === 6 && (
             <div className="mt-5 relative">
-              {/* button border magic from tailwind css buttons  */}
-              {/* add rounded-md h-8 md:h-8, remove rounded-full */}
-              {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
-              {/* add handleCopy() for the copy the text */}
-              <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                  }`}
-              >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
-              </div>
-
-              <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
-                icon={<IoCopyOutline />}
-                position="left"
-                handleClick={handleCopy}
-                otherClasses="!bg-[#161A31]"
-              />
+          
+             <a href="https://drive.google.com/your-cv-link" target="_blank" rel="noreferrer">
+      <MagicButton
+        title="View my CV"
+        icon={<FaLocationArrow />}
+        position="right"
+        otherClasses="!bg-[#161A31]"
+      />
+    </a>
             </div>
           )}
         </div>

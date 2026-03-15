@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="flex flex-col gap-4 text-center lg:text-left items-center lg:items-start">
 
           <p className="text-sm md:text-base lg:text-lg text-white/60 tracking-wide">
-            Hi, I&apos;m Ahmed Ziedan
+            Hi, I&apos;m<span className="text-white/90"> Ahmed Ziedan</span>
           </p>
 
           <h1 className="text-5xl md:text-5xl lg:text-7xl xl:text-8xl text-white font-black leading-none">
@@ -68,7 +68,7 @@ const Hero = () => {
   className="text-sm md:text-base lg:text-lg text-white leading-relaxed"
 />
 
-          <a href="#about">
+          <a href="#projects">
             <MagicButton
               title="View My Work"
               icon={<FaLocationArrow />}
