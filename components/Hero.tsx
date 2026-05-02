@@ -64,7 +64,7 @@ const Hero = () => {
         <div className="flex flex-col gap-5 text-center lg:text-left items-center lg:items-start">
 
           <TextGenerateEffect
-  words=".NET Back-End Developer | Microsoft Dynamics 365 CRM / CE Developer | B.Sc. Computer Science and Mathematics"
+  words=".NET Back-End Developer | B.Sc. Computer Science and Mathematics"
   className="text-sm md:text-base lg:text-lg text-white leading-relaxed"
 />
 

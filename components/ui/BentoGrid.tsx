@@ -167,7 +167,7 @@ const rightLists = ["MVC", "LINQ", "SQL"];
           {id === 6 && (
             <div className="mt-5 relative">
           
-             <a href="https://drive.google.com/your-cv-link" target="_blank" rel="noreferrer">
+             <a href="https://drive.google.com/file/d/15V8-4dwvfeImiCcOLTSaZllUGodwXF2A/view" target="_blank" rel="noreferrer">
       <MagicButton
         title="View my CV"
         icon={<FaLocationArrow />}

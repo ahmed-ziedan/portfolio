@@ -2,7 +2,7 @@ export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
-  { name: "CV", link: "#testimonials" },
+  { name: "CV", link: "https://drive.google.com/file/d/15V8-4dwvfeImiCcOLTSaZllUGodwXF2A/view" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -62,71 +62,76 @@ export const gridItems = [
 ];
 
 export const projects = [
-  // {
-  //   id: 1,
-  //   title: "3D Solar System Planets to Explore",
-  //   des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-  //   img: "/p1.svg",
-  //   iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-  //   link: "/ui.earth.com",
-  // },
-  {
-    id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+ {
+    id: 4,
+    title: "E-Commerce Bookstore Web Application",
+    des: "A full-featured e-commerce bookstore with role-based authorization, admin dashboard, and Stripe payment integration.",
+    img: "/bulky.png",
+    iconLists: ["/csharp.png", "/dotnet.svg", "/ef.svg", "/bootstrap.png", "/sql.svg"],
+    link: "https://github.com/ahmed-ziedan/Bulky-BookStore",
+    live: "https://github.com/ahmed-ziedan/Bulky-BookStore",
   },
   {
-    id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    id: 5,
+    title: "RESTful Web API — Clean Architecture",
+    des: "A production-ready REST API with JWT authentication, role-based access control, and Swagger documentation.",
+    img: "/webapi.png",
+    iconLists: ["/csharp.png", "/dotnet.svg", "/ef.svg", "/swagger.svg", "/sql.svg"],
+    link: "https://github.com/ahmed-ziedan/Clean-Architecture-WebAPI",
+    live: "https://github.com/ahmed-ziedan/Clean-Architecture-WebAPI",
   },
-  // {
-  //   id: 4,
-  //   title: "Animated Apple Iphone 3D Website",
-  //   des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-  //   img: "/p4.svg",
-  //   iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-  //   link: "/ui.apple.com",
-  // },
+ {
+    id: 6,
+    title: "Al Mahmoud — Agricultural Export Platform",
+    des: "A professional web platform for an Egyptian agricultural import/export company, built with Angular.",
+    img: "/almahmoud.png",
+    iconLists: ["/angular.svg", "/ts.svg", "/tail.svg", "/html.svg", "/css.svg"],
+    link: "https://github.com/ahmed-ziedan/almahmoud",
+    live: "https://almahmoud.vercel.app/",
+  },
+  {
+    id: 7,
+    title: "Seen It — Movie & TV Tracker",
+    des: "A web app to track movies and TV shows you've watched and want to watch.",
+    img: "/seenit.png",
+    iconLists: ["/angular.svg", "/ts.svg", "/html.svg", "/css.svg"],
+    link: "https://github.com/ahmed-ziedan/Seen-it",
+    live: "https://seen-it-one.vercel.app/",
+  },
+
 ];
 
 export const testimonials = [
   {
     quote:
-      "ما شاء الله، الأستاذ أحمد شخصًا محترفًا جدًا، يتمتع بقدرة عالية على التنفيذ، كما أن مقترحاته مفيدة وفعّالة، وتسهم في توجيه العمل نحو مسارات أفضل وأكثر تطورًا.",
-    name: "Islam H.",
+      "ما شاء الله، الأستاذ أحمد شخصًا محترفًا جدًا، يتمتع بقدرة عالية على التنفيذ، كما أن مقترحاته مفيدة وفعّالة، وتسهم في توجيه العمل نحو مسارات أفضل وأكثر تطورًا",
+    name: "Islam Azazy",
     title: "Accountant & Operational Excellence",
 
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "I had the pleasure of working with Ahmed and was consistently impressed by his dedication, professionalism, and attention to detail. He brings both creativity and commitment to everything he does, and his work always stands out for its quality and impact. Ahmed is not only skilled at what he does, but he’s also reliable and a great team player. I highly recommend him for any opportunity — he’s truly an asset to any team.",
+    name: "Eman Salem",
+    title: "L&D Specialist | Employment Coach",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "شكرا جزيلا لحضرتك تواصل و متابعة و تنفيذ و دقة احترافية فوق الممتاز و تسليم قبل الموعد المحدد",
+    name: "Nader ElKasas",
+    title: "Sales Manager at Mannor Jewelry",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Ahmed is very talented and extremely helpful would 100% recommend working with him.",
+    name: "Adam Elnagdy",
+    title: "Enterpreneur & Freelancer",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "بصراحة أ أحمد من الناس المبدعه والنشيطة جداً ومريت معاها بتجربة رائعة وهو كان المبادر واللى بيفكر وبيبدع فى افكار جديدة مكنتش عندى دا غير سرعة الانجاز طبعا. فعلا تستاهل كل خير ومبسوط انى اتعاملت معاك",
+    name: "Ramy Mahmoud",
+    title: "Engineer & Founder"
   },
 ];
 
@@ -167,29 +172,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Frontend Developer - Freelance",
+    desc: "Delivered responsive web applications for clients using Angular and modern JavaScript technologies via Khamsat.com.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
-  {
-    id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
+  // {
+  //   id: 2,
+  //   title: "Mobile App Dev - JSM Tech",
+  //   desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+  //   className: "md:col-span-2", 
+  //   thumbnail: "/exp2.svg",
+  // },
+  // {
+  //   id: 3,
+  //   title: "Freelance App Dev Project",
+  //   desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+  //   className: "md:col-span-2", 
+  //   thumbnail: "/exp3.svg",
+  // },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "MEAN Stack Developer Intern",
+    desc: "Gained hands-on experience building full-stack web applications using MongoDB, Express.js, Angular, and Node.js at NTI.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -201,11 +206,11 @@ export const socialMedia = [
     img: "/git.svg",
  link: "https://github.com/ahmed-ziedan"
   },
-  {
-    id: 2,
-    img: "/twit.svg",
-    link: "https://x.com/ahmedziedan_"
-  },
+  // {
+  //   id: 2,
+  //   img: "/twit.svg",
+  //   link: "https://x.com/ahmedziedan_"
+  // },
   {
     id: 3,
     img: "/link.svg",
