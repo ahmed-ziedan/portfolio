@@ -98,7 +98,15 @@ export const projects = [
     link: "https://github.com/ahmed-ziedan/Seen-it",
     live: "https://seen-it-one.vercel.app/",
   },
-
+{
+  id: 8,
+  title: "HMR Care Australia — Conversion-Focused Healthcare Website",
+  des: "A healthcare website built for HMR Care Australia to generate GP referrals, educate patients, and onboard pharmacists.",
+  img: "/hmr.png",
+  iconLists: ["/next.svg", "/ts.svg", "/tail.svg"],
+  link: "https://github.com/ahmed-ziedan/hmr_care",
+  live: "https://hmrcareaustralia.com.au/",
+}
 ];
 
 export const testimonials = [
