@@ -1,6 +1,10 @@
 import {withSentryConfig} from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    formats: ['image/avif', 'image/webp'],
+  },
+};
 
 export default withSentryConfig(nextConfig, {
 // For all available options, see:
@@ -18,7 +22,7 @@ project: "javascript-nextjs",
 widenClientFileUpload: true,
 
 // Transpiles SDK to be compatible with IE11 (increases bundle size)
-transpileClientSDK: true,
+transpileClientSDK: false,
 
 // Uncomment to route browser requests to Sentry through a Next.js rewrite to circumvent ad-blockers.
 // This can increase your server load as well as your hosting bill.
