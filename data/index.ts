@@ -2,7 +2,11 @@ export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
-  { name: "CV", link: "https://drive.google.com/file/d/15V8-4dwvfeImiCcOLTSaZllUGodwXF2A/view", target: "_blank" },
+  {
+    name: "CV",
+    link: "https://drive.google.com/file/d/15V8-4dwvfeImiCcOLTSaZllUGodwXF2A/view",
+    target: "_blank",
+  },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -48,7 +52,6 @@ export const gridItems = [
     spareImg: "/b4.svg",
   },
 
-
   {
     id: 6,
     title: "My experience, all in one place.",
@@ -62,12 +65,18 @@ export const gridItems = [
 ];
 
 export const projects = [
- {
+  {
     id: 4,
     title: "E-Commerce Bookstore Web Application",
     des: "A full-featured e-commerce bookstore with role-based authorization, admin dashboard, and Stripe payment integration.",
     img: "/bulky.png",
-    iconLists: ["/csharp.png", "/dotnet.svg", "/ef.svg", "/bootstrap.png", "/sql.svg"],
+    iconLists: [
+      "/csharp.png",
+      "/dotnet.svg",
+      "/ef.svg",
+      "/bootstrap.png",
+      "/sql.svg",
+    ],
     link: "https://github.com/ahmed-ziedan/Bulky-BookStore",
     live: "https://github.com/ahmed-ziedan/Bulky-BookStore",
   },
@@ -76,37 +85,49 @@ export const projects = [
     title: "RESTful Web API — Clean Architecture",
     des: "A production-ready REST API with JWT authentication, role-based access control, and Swagger documentation.",
     img: "/webapi.png",
-    iconLists: ["/csharp.png", "/dotnet.svg", "/ef.svg", "/swagger.svg", "/sql.svg"],
+    iconLists: [
+      "/csharp.png",
+      "/dotnet.svg",
+      "/ef.svg",
+      "/swagger.svg",
+      "/sql.svg",
+    ],
     link: "https://github.com/ahmed-ziedan/Clean-Architecture-WebAPI",
     live: "https://github.com/ahmed-ziedan/Clean-Architecture-WebAPI",
   },
- {
+  {
     id: 6,
     title: "Al Mahmoud — Agricultural Export Platform",
     des: "A professional web platform for an Egyptian agricultural import/export company, built with Angular.",
     img: "/almahmoud.png",
-    iconLists: ["/angular.svg", "/ts.svg", "/tail.svg", "/html.svg", "/css.svg"],
+    iconLists: [
+      "/angular.svg",
+      "/ts.svg",
+      "/tail.svg",
+      "/html.svg",
+      "/css.svg",
+    ],
     link: "https://github.com/ahmed-ziedan/almahmoud",
     live: "https://almahmoud.vercel.app/",
   },
   {
     id: 7,
-    title: "Seen It — Movie & TV Tracker",
-    des: "A web app to track movies and TV shows you've watched and want to watch.",
-    img: "/seenit.png",
-    iconLists: ["/angular.svg", "/ts.svg", "/html.svg", "/css.svg"],
-    link: "https://github.com/ahmed-ziedan/Seen-it",
-    live: "https://seen-it-one.vercel.app/",
+    title: "Wathba — Software Solutions",
+    des: "Agency that build professional websites in days — fixed price, no surprises.",
+    img: "/wathba.png",
+    iconLists: ["/next.svg", "/ts.svg", "/tail.svg"],
+    link: "https://github.com/ahmed-ziedan/wathba",
+    live: "https://wathba.tech/",
   },
-{
-  id: 8,
-  title: "HMR Care Australia — Conversion-Focused Healthcare Website",
-  des: "A healthcare website built for HMR Care Australia to generate GP referrals, educate patients, and onboard pharmacists.",
-  img: "/hmr.png",
-  iconLists: ["/next.svg", "/ts.svg", "/tail.svg"],
-  link: "https://github.com/ahmed-ziedan/hmr_care",
-  live: "https://hmrcareaustralia.com.au/",
-}
+  {
+    id: 8,
+    title: "HMR Care Australia — Conversion-Focused Healthcare Website",
+    des: "A healthcare website built for HMR Care Australia to generate GP referrals, educate patients, and onboard pharmacists.",
+    img: "/hmr.png",
+    iconLists: ["/next.svg", "/ts.svg", "/tail.svg"],
+    link: "https://github.com/ahmed-ziedan/hmr_care",
+    live: "https://hmrcareaustralia.com.au/",
+  },
 ];
 
 export const testimonials = [
@@ -115,7 +136,6 @@ export const testimonials = [
       "ما شاء الله، الأستاذ أحمد شخصًا محترفًا جدًا، يتمتع بقدرة عالية على التنفيذ، كما أن مقترحاته مفيدة وفعّالة، وتسهم في توجيه العمل نحو مسارات أفضل وأكثر تطورًا",
     name: "Islam Azazy",
     title: "Accountant & Operational Excellence",
-
   },
   {
     quote:
@@ -139,7 +159,7 @@ export const testimonials = [
     quote:
       "بصراحة أ أحمد من الناس المبدعه والنشيطة جداً ومريت معاها بتجربة رائعة وهو كان المبادر واللى بيفكر وبيبدع فى افكار جديدة مكنتش عندى دا غير سرعة الانجاز طبعا. فعلا تستاهل كل خير ومبسوط انى اتعاملت معاك",
     name: "Ramy Mahmoud",
-    title: "Engineer & Founder"
+    title: "Engineer & Founder",
   },
 ];
 
@@ -149,7 +169,6 @@ export const companies = [
     name: "cloudinary",
     img: "/cloud.svg",
     nameImg: "/cloudName.svg",
-    
   },
   {
     id: 2,
@@ -185,20 +204,6 @@ export const workExperience = [
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
-  // {
-  //   id: 2,
-  //   title: "Mobile App Dev - JSM Tech",
-  //   desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-  //   className: "md:col-span-2", 
-  //   thumbnail: "/exp2.svg",
-  // },
-  // {
-  //   id: 3,
-  //   title: "Freelance App Dev Project",
-  //   desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-  //   className: "md:col-span-2", 
-  //   thumbnail: "/exp3.svg",
-  // },
   {
     id: 4,
     title: "MEAN Stack Developer Intern",
@@ -212,7 +217,7 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
- link: "https://github.com/ahmed-ziedan"
+    link: "https://github.com/ahmed-ziedan",
   },
   // {
   //   id: 2,
@@ -222,6 +227,6 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
-    link: "https://www.linkedin.com/in/ahmedziedan/"
+    link: "https://www.linkedin.com/in/ahmedziedan/",
   },
 ];
