@@ -1,56 +1,61 @@
-import React from "react";
-import Image from "next/image";
+"use client";
 
-import { workExperience } from "@/data";
-import { Button } from "./ui/MovingBorders";
+import { ArrowUpRight, BriefcaseBusiness, GraduationCap, Workflow } from "lucide-react";
+import { m } from "framer-motion";
+import { experienceHighlights } from "@/data";
+
+const highlightIcons = {
+  client: BriefcaseBusiness,
+  automation: Workflow,
+  education: GraduationCap,
+};
 
 const Experience = () => {
   return (
-    <div className="py-20 w-full">
-      <h1 className="heading">
-        My <span className="text-purple">work experience</span>
-      </h1>
-
-      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
-        {workExperience.map((card) => (
-          <Button
-            key={card.id}
-            //   random duration will be fun , I think , may be not
-            duration={Math.floor(Math.random() * 10000) + 10000}
-            borderRadius="1.75rem"
-            style={{
-              //   add these two
-              //   you can generate the color from here https://cssgradient.io/
-              background: "rgb(4,7,29)",
-              backgroundColor:
-                "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-              // add this border radius to make it more rounded so that the moving border is more realistic
-              borderRadius: `calc(1.75rem* 0.96)`,
-            }}
-            // remove bg-white dark:bg-slate-900
-            className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
-          >
-            <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
-              <Image
-                src={card.thumbnail}
-                alt={card.thumbnail}
-                width={128}
-                height={128}
-                className="lg:w-32 md:w-20 w-16"
-              />
-              <div className="lg:ms-5">
-                <h1 className="text-start text-xl md:text-2xl font-bold">
-                  {card.title}
-                </h1>
-                <p className="text-start text-white-100 mt-3 font-semibold">
-                  {card.desc}
-                </p>
-              </div>
-            </div>
-          </Button>
-        ))}
+    <section className="section-wrap" id="experience">
+      <div className="section-heading-row">
+        <div>
+          <p className="section-kicker">Experience &amp; highlights</p>
+          <h2 className="section-title">Where I&apos;ve learned by doing.</h2>
+        </div>
+        <p className="section-intro">
+          A short view of the work and foundations behind what I build.
+        </p>
       </div>
-    </div>
+
+      <div className="grid gap-4 lg:grid-cols-3">
+        {experienceHighlights.map((card, index) => {
+          const Icon = highlightIcons[card.icon as keyof typeof highlightIcons];
+
+          return (
+          <m.article
+            key={card.id}
+            className="experience-card group"
+            initial={{ opacity: 1, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.15 }}
+            transition={{ duration: 0.38, delay: index * 0.06, ease: "easeOut" }}
+            whileHover={{ y: -3 }}
+          >
+            <div className="experience-card-topline">
+              <span className="experience-logo"><Icon size={21} strokeWidth={1.8} /></span>
+              <span className="experience-index">{card.period}</span>
+            </div>
+            <div className="flex-1">
+              <p className="experience-category">{card.category}</p>
+              <h3 className="text-lg font-bold tracking-tight text-foreground sm:text-xl">
+                {card.title}
+              </h3>
+              <p className="experience-organization">{card.organization}</p>
+              <p className="mt-2 text-sm leading-6 text-text-muted">
+                {card.desc}
+              </p>
+            </div>
+            <ArrowUpRight className="experience-arrow" size={18} aria-hidden="true" />
+          </m.article>
+        )})}
+      </div>
+    </section>
   );
 };
 

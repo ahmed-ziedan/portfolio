@@ -1,64 +1,54 @@
-import { FaLocationArrow } from "react-icons/fa6";
+import React from "react";
 import Image from "next/image";
-
-import { socialMedia } from "@/data";
-import MagicButton from "./MagicButton";
-import { BackgroundBeams } from "./ui/background-beams";
+import { Mail } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { socialMedia, contactEmail } from "@/data";
 
 const Footer = () => {
   return (
-    <footer className="w-full  pt-20 pb-10" id="contact">
-      {/* background grid */}
-       <div className="w-full absolute left-0 -bottom-0 min-h-96">
-        <Image
-          src="/footer-grid.svg"
-          alt="grid"
-          fill
-          className="w-full h-full opacity-50 object-cover"
-        />
-      </div> 
-
-     
-
-      <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
-        </h1>
-        <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
+    <footer className="section-wrap pb-10" id="contact">
+      <div className="contact-panel">
+        <p className="section-kicker">Get in touch</p>
+        <h2 className="contact-title">
+          Have a project in mind?<br />
+          <span>Let&apos;s make it happen.</span>
+        </h2>
+        <p className="mt-5 max-w-lg text-center text-sm leading-6 text-text-muted sm:text-base sm:leading-7">
+          For .NET development, web applications, or a good conversation about software,
+          my inbox is open.
         </p>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmedziedan.w@gmail.com&su=Ahmed,%20let's%20work%20" target="_blank" >
-          <MagicButton
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
+        <a href={`mailto:${contactEmail}`} className="magic-button mt-7" aria-label="Send email to Ahmed Ziedan">
+          <Mail size={17} /> Say hello
         </a>
       </div>
-      <div className=" flex mt-16  md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light">
-        <span className=" text-white/75">Copyright © 2026</span>  Ahmed Ziedan
+
+      <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/[0.08] pt-6 sm:flex-row">
+        <p className="text-sm text-text-muted">
+          Copyright &copy; 2026 Ahmed Ziedan
         </p>
 
-        <div className="mt-5 flex items-center md:gap-3 gap-6">
+        <div className="flex items-center gap-4">
           {socialMedia.map((info) => (
             <a
               key={info.id}
-               href={info.link}
-               target="_blank"
-              rel="noreferrer"
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+              href={info.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={info.id === 1 ? "GitHub profile" : "LinkedIn profile"}
+              className={cn(
+                "w-10 h-10 flex justify-center items-center rounded-lg border border-border",
+                "bg-panel/50 hover:bg-panel transition-colors",
+                "focus-visible:outline-2 focus-visible:outline-offset-2"
+              )}
+              style={{ outlineColor: "hsl(var(--ring))" }}
             >
-              <Image src={info.img} alt="icons" width={20} height={20} />
+              <Image src={info.img} alt="" width={20} height={20} />
             </a>
           ))}
         </div>
-        
       </div>
-       {/* Signature */}
-      <p className="text-center text-white/50 text-sm mt-6 italic">
+
+      <p className="text-center text-text-muted text-sm mt-6 italic">
         Always learning, always growing.
       </p>
     </footer>
